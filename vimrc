@@ -10,8 +10,8 @@ set number
 set hlsearch
 set incsearch
 set guifont=Fira_Code:h14
-set linespace=13
-set macligatures
+"set linespace=13
+"set macligatures
 set textwidth=0
 set wrapmargin=0
 set wrap!
@@ -25,7 +25,7 @@ set copyindent
 "=============Mappings================"
 nmap <D-1> :NERDTreeToggle<cr>
 nmap <D-R> :CtrlPBufTag<cr>
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>ev :tabedit ~/.vim/vimrc<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <D-p> :CtrlP<cr>
 " Smart way to move between windows
@@ -46,7 +46,6 @@ map <leader>h :bprevious<cr>
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 "--------------Extra------------------
 let g:Powerline_symbols = 'fancy'
-set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 " Set extra options when running in GUI mode
 if has("gui_running")
