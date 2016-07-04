@@ -17,13 +17,10 @@ set wrapmargin=0
 set wrap!
 set laststatus=2
 set cursorline
-"Allow dir list when tabing 
-set wildmenu
-"Ignore case when searching
-set ignorecase
-" Don't redraw while executing macros (good performance config)
+set wildmenu                   
+set ignorecase                 
 set lazyredraw
-
+set copyindent                
 
 "=============Mappings================"
 nmap <D-1> :NERDTreeToggle<cr>
@@ -48,6 +45,9 @@ map <leader>h :bprevious<cr>
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 "--------------Extra------------------
+let g:Powerline_symbols = 'fancy'
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
@@ -88,6 +88,3 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
-
-set ai "Auto indent
-set si "Smart indent
