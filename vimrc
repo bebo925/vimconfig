@@ -9,8 +9,8 @@ let mapleader = ','
 set number
 set hlsearch
 set incsearch
-set guifont=Fira_Code:h14
-"set linespace=13
+set guifont=Fira_Code:h15
+set linespace=12
 "set macligatures
 set textwidth=0
 set wrapmargin=0
