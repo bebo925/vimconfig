@@ -23,7 +23,11 @@ set lazyredraw
 set copyindent                
 
 "=============Mappings================"
-nmap <D-1> :NERDTreeToggle<cr>
+"nmap <D-1> :NERDTreeToggle<cr>
+" Toggle nerdtree with F10
+map <F10> :NERDTreeToggle<CR>
+" " Current file in nerdtree
+map <F9> :NERDTreeFind<CR>
 nmap <D-R> :CtrlPBufTag<cr>
 nmap <Leader>ev :tabedit ~/.vim/vimrc<cr>
 nmap <Leader><space> :nohlsearch<cr>
@@ -43,7 +47,7 @@ map <leader>l :bnext<cr>
 map <leader>h :bprevious<cr>
 
 " bind K to grep word under cursor
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 "--------------Extra------------------
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8 " Necessary to show Unicode glyphs
