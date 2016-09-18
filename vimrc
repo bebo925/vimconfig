@@ -3,7 +3,7 @@ syntax enable
 so ~/.vim/plugins.vim
 set background=dark
 let g:solarized_termcolors=256
-colorscheme molokai
+colorscheme monokai 
 set backspace=indent,eol,start
 let mapleader = ','
 set number
@@ -32,6 +32,9 @@ nmap <D-R> :CtrlPBufTag<cr>
 nmap <Leader>ev :tabedit ~/.vim/vimrc<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <D-p> :CtrlP<cr>
+
+"greplace
+set grepprg=ag
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
