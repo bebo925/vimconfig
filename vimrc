@@ -32,7 +32,7 @@ nmap <D-R> :CtrlPBufTag<cr>
 nmap <Leader>ev :tabedit ~/.vim/vimrc<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <D-p> :CtrlP<cr>
-
+imap jj <Esc>
 "greplace
 set grepprg=ag
 " Smart way to move between windows
