@@ -21,7 +21,8 @@ set wildmenu
 set ignorecase                 
 set lazyredraw
 set copyindent                
-
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 "=============Mappings================"
 "nmap <D-1> :NERDTreeToggle<cr>
 " Toggle nerdtree with F10
