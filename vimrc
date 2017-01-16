@@ -107,4 +107,4 @@ function! NumberToggle()
       endif
       endfunc
 
-nnoremap <C-n> :call NumberToggle
+nnoremap <C-n> :call NumberToggle()
