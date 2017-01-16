@@ -23,6 +23,8 @@ set lazyredraw
 set copyindent                
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+set path+=**
+command! MakeTags !ctags -R .
 "=============Mappings================"
 "nmap <D-1> :NERDTreeToggle<cr>
 " Toggle nerdtree with F10
@@ -34,6 +36,7 @@ nmap <Leader>ev :tabedit ~/.vim/vimrc<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <D-p> :CtrlP<cr>
 imap jj <Esc>
+map <C-q> <C-w><C-o>
 "greplace
 set grepprg=ag
 " Smart way to move between windows
@@ -95,3 +98,13 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+
+function! NumberToggle()
+      if(&relativenumber == 1)
+          set number
+        else
+            set relativenumber
+      endif
+      endfunc
+
+nnoremap <C-n> :call NumberToggle
