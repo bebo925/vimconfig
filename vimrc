@@ -28,9 +28,9 @@ command! MakeTags !ctags -R .
 "=============Mappings================"
 "nmap <D-1> :NERDTreeToggle<cr>
 " Toggle nerdtree with F10
-map <F10> :NERDTreeToggle<CR>
+map <Leader>KB :NERDTreeToggle<CR>
 " " Current file in nerdtree
-map <F9> :NERDTreeFind<CR>
+map <Leader>kb :NERDTreeFind<CR>
 nmap <D-R> :CtrlPBufTag<cr>
 nmap <Leader>ev :tabedit ~/.vim/vimrc<cr>
 nmap <Leader><space> :nohlsearch<cr>
