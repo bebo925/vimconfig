@@ -39,6 +39,7 @@ imap jj <Esc>
 map <C-q> <C-w><C-o>
 "greplace
 set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
