@@ -6,12 +6,12 @@ let g:solarized_termcolors=256
 colorscheme monokai 
 set backspace=indent,eol,start
 let mapleader = ','
+set autoindent
 set number
 set hlsearch
 set incsearch
 set guifont=Fira_Code:h15
 set linespace=12
-"set macligatures
 set textwidth=0
 set wrapmargin=0
 set wrap!
@@ -23,15 +23,13 @@ set lazyredraw
 set copyindent                
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-set path+=**
+'set path+=**
 command! MakeTags !ctags -R .
 "=============Mappings================"
-"nmap <D-1> :NERDTreeToggle<cr>
-" Toggle nerdtree with F10
-map <Leader>KB :NERDTreeToggle<CR>
 " " Current file in nerdtree
 map <Leader>kb :NERDTreeFind<CR>
 nmap <D-R> :CtrlPBufTag<cr>
+"Edit vimrc file
 nmap <Leader>ev :tabedit ~/.vim/vimrc<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <D-p> :CtrlP<cr>
@@ -59,6 +57,12 @@ nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 "--------------Extra------------------
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8 " Necessary to show Unicode glyphs
+set laststatus=2   " Always show the statusline
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)   "
+
+" I don't want to pull up these folders/files when calling CtrlP
+set wildignore+=*/vendor/**
+
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
