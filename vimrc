@@ -3,7 +3,7 @@ syntax enable
 so ~/.vim/plugins.vim
 set background=dark
 let g:solarized_termcolors=256
-colorscheme monokai 
+colorscheme atom-dark-256 
 set backspace=indent,eol,start
 let mapleader = ','
 set autoindent
