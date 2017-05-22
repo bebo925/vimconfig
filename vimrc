@@ -23,7 +23,7 @@ set lazyredraw
 set copyindent                
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-'set path+=**
+set path+=**
 command! MakeTags !ctags -R .
 "=============Mappings================"
 " " Current file in nerdtree
