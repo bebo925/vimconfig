@@ -14,6 +14,7 @@ set guifont=Fira_Code:h15
 set linespace=12
 set textwidth=0
 set wrapmargin=0
+set relativenumber
 set wrap!
 set laststatus=2
 set cursorline
