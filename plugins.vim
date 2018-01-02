@@ -19,11 +19,12 @@ Plugin 'powerline/powerline'
 Plugin 'skwp/greplace.vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'vim-scripts/closetag.vim'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 Plugin 'posva/vim-vue'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'Quramy/tsuquyomi'
 Plugin 'mattn/emmet-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
